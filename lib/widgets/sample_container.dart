@@ -10,18 +10,27 @@ class SampleContainer extends StatefulWidget {
 class _SampleContainerState extends State<SampleContainer> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(20),
-      padding: const EdgeInsets.only(left: 30, top: 30),
-      height: 200,
-      width: 200,
-      decoration: BoxDecoration(
-        color: Colors.purpleAccent,
-        border: Border.all(width: 4, color: Colors.blue),
-        borderRadius: BorderRadius.circular(100),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Belajar Container'),
       ),
-      child:
-          const Text('Selamat Belajar Container dan belajar widgets lainnya'),
+      body: Center(
+        child: Container(
+          margin: const EdgeInsets.all(20),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          height: 200,
+          width: 200,
+          decoration: BoxDecoration(
+            color: Colors.purpleAccent,
+            border: Border.all(width: 4, color: Colors.blue),
+            borderRadius: BorderRadius.circular(100),
+          ),
+          child: const Center(
+            child:
+                Text('Selamat Belajar Container dan belajar widgets lainnya'),
+          ),
+        ),
+      ),
     );
   }
 }
