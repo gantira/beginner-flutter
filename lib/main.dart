@@ -1,5 +1,5 @@
 import 'package:beginner_flutter/widgets/sample_container.dart';
-import 'package:beginner_flutter/widgets/sample_image_circle.dart';
+import 'package:beginner_flutter/widgets/sample_listview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const SampleImageCircle(),
+      home: SampleLietView(),
     );
   }
 }
