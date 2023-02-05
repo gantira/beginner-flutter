@@ -1,5 +1,5 @@
+import 'package:beginner_flutter/widgets/sample_bottom_navbar.dart';
 import 'package:beginner_flutter/widgets/sample_container.dart';
-import 'package:beginner_flutter/widgets/sample_listview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.grey,
       ),
-      home: SampleLietView(),
+      home: const SampleBottomNavbar(),
     );
   }
 }
