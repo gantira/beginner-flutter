@@ -1,4 +1,4 @@
-import 'package:beginner_flutter/widgets/sample_padding.dart';
+import 'package:beginner_flutter/widgets/sample_column_row.dart';
 import 'package:flutter/material.dart';
 
 class SampleBottomNavbar extends StatefulWidget {
@@ -18,7 +18,7 @@ class _SampleBottomNavbarState extends State<SampleBottomNavbar> {
   }
 
   List<Widget> pages = [
-    const SamplePadding(),
+    const SampleColumnRow(),
     const Text(
       'Cari',
       style: TextStyle(
@@ -43,7 +43,7 @@ class _SampleBottomNavbarState extends State<SampleBottomNavbar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Latihan Padding'),
+        title: const Text('Latihan Column Row'),
       ),
       body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
